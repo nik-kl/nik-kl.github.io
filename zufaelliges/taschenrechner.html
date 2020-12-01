@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Aufgabe 8</title>
+
+    <script type="text/javascript">
+      function rechner(){
+        var radius, durchmesser, umfang, flaeche;
+
+/*
+        radius = document.kreisrechner.eingabe_radius.value;
+*/
+
+        radius = document.getElementById("radius").value;
+
+        if (radius <= 0) {
+          window.alert("FEHLER! Wert kleiner als 1");
+          return 0;
+        }
+
+        durchmesser = (radius * 2);
+        umfang = (radius * Math.PI);
+        flaeche= ((radius * radius) * Math.PI);
+
+/*
+        document.kreisrechner.ausgabe_durchmesser.value = "Hallo";
+        document.kreisrechner.ausgabe_umfang.value = umfang;
+        document.kreisrechner.ausgabe_flaeche.value = flaeche;
+*/
+
+        document.getElementById("durchmesser").value = durchmesser;
+        document.getElementById("flaeche").value = flaeche;
+        document.getElementById("umfang").value = umfang;
+
+      }
+    </script>
+
+  </head>
+  <body>
+
+    <form name="kreisrechner">
+
+      Radius: <input type="number" name="eingabe_radius" id="radius"><br>
+      Durchmesser: <input type="text" name="ausgabe_durchmesser" id="durchmesser"><br>
+      Flaeche: <input type="text" name="ausgabe_flaeche" id="flaeche"><br>
+      Umfang: <input type="text" name="ausgabe_umfang" id="umfang"><br>
+      <input type="button" name="berechnen" value="BERECHNEN" onClick="rechner()">
+      <input type="reset" name="loeschen" value="LÖSCHEN">
+
+    </form>
+
+
+
+  </body>
+</html>

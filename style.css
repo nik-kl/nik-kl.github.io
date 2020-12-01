@@ -63,6 +63,7 @@ p_home {
 span {
 	color: white;
 	font-family: "Times New Roman";
+	background-color:rgba(18,16,16,0.45);
 }
 
 span_link {
@@ -96,6 +97,7 @@ span_link {
 a	{
 	text-decoration:	none;
 	color: #BDBDBD;
+	font-size: 40px;
 }
 
 .portrait	{
