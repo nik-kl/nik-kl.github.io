@@ -5,7 +5,7 @@
 	<meta name="description" content="Just a business card. Simple but meaningful">
 	<meta name="keywords" content="Niklas K., Niklas IT-HTL, Niklas Ybbs">
 	<meta name="author" content="Niklas K.">
-	<link rel="icon" href="/icons/favicon.ico">
+	<link rel="icon" href="icons/favicon.ico">
 	<title>Coming Soon</title>
 </head>
 <style>
@@ -15,7 +15,7 @@ body, html {
 }
 
 .bgimg {
-  background-image: url('/backgrounds/home_bg.jpg');
+  background-image: url('backgrounds/home_bg.jpg');
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -67,8 +67,7 @@ hr {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-  document.getElementById("expired").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("expired").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
   
   if (distance < 0) {
     clearInterval(countdownfunction);
