@@ -1,0 +1,860 @@
+jnh b<!-- 
+    Schriften von 1001fonts.com (frei fuer kommerzielle Nutzung) 
+    Bilder von Pixabay
+    
+    -->
+
+<html lang="de-at">
+
+<head>
+
+    <title>Massage-Fachinstitut</title>
+
+    <link href="logo2.png" rel="shortcut icon" type="image/x-icon" height="50px"/>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+
+    <style>
+
+        body {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 101%;
+            background-size: 100%;
+            cursor: grab;
+            word-wrap: break-word;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background-repeat: no-repeat;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.5vw;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #617369;
+            border-radius: 15vw;
+            border: 0.05vw solid transparent;
+            background-clip: content-box;
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: #4f5f56;
+            }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #telefon {
+            position: absolute;
+            right: 40px;
+            top: 20px;
+            height: 10%;
+            margin-top: -5px;
+        }
+
+        #telefonbunt {
+            position: absolute;
+            right: 40px;
+            top: 20px;
+            height: 10%;
+            margin-top: -5px;
+            opacity: 0;
+        }
+
+            #telefonbunt:hover {
+                opacity: 1;
+                transition: opacity 1s;
+            }
+
+        #mail {
+            position: absolute;
+            right: 140px;
+            top: 20px;
+            height: 8%;
+        }
+
+        #mailbunt {
+            position: absolute;
+            right: 140px;
+            top: 20px;
+            height: 8%;
+            opacity: 0;
+        }
+
+        #mailbunt:hover {
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        #logoheader {
+            height: 30%;
+            margin-top: 10px;
+            display: table-cell;
+        }
+
+        #beschreibungheader {
+            margin-bottom: 100px;
+            height: 30%;
+        }
+
+        #foto {
+            height: 400px;
+            width: 300px;
+        }
+
+        #name {
+            height: 120px;
+        }
+
+        .box {
+            padding: 10px 50px 10px 10px;
+        }
+
+        #heilmassage {
+            margin: 120px 500px 120px 0px;
+            border-radius: 0px 60px 60px 0px;
+            background: url(bild1.jpg);
+            background-repeat: no-repeat;
+            //float: left;
+        }
+
+        #praeventiv {
+            margin: 120px 0px 120px 650px;
+            border-radius: 60px 0px 0px 60px;
+            background: url(bild2.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #entspannung {
+            margin: 120px 500px 120px 0px;
+            border-radius: 0px 60px 60px 0px;
+            background: url(bild1.jpg);
+            background-repeat: no-repeat;
+        }
+
+        #zusatz {
+            margin: 120px 0px 120px 700px;
+            border-radius: 60px 0px 0px 60px;
+            background: url(bild2.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .überschrift {
+            font-size: 25px;
+            color: #617369;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+
+        hr {
+            height: 2px;
+            background-color: #617369;
+        }
+
+        /*eins*/
+
+        #eins {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #eins:not(:target) .einsinhalt,
+            #eins:not(:target) .hideeins,
+            #eins:target .showeins {
+                display: none;
+            }
+
+            #eins:target .einsinhalt {
+                display: block;
+            }
+
+        .einsinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showeins,
+        .hideeins {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showeins:hover,
+            .hideeins:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*zwei*/
+
+        #zwei {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #zwei:not(:target) .zweiinhalt,
+            #zwei:not(:target) .hidezwei,
+            #zwei:target .showzwei {
+                display: none;
+            }
+
+            #zwei:target .zweiinhalt {
+                display: block;
+            }
+
+        .zweiinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showzwei,
+        .hidezwei {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showzwei:hover,
+            .hidezwei:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*drei*/
+
+        #drei {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #drei:not(:target) .dreiinhalt,
+            #drei:not(:target) .hidedrei,
+            #drei:target .showdrei {
+                display: none;
+            }
+
+            #drei:target .dreiinhalt {
+                display: block;
+            }
+
+        .dreiinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showdrei,
+        .hidedrei {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showdrei:hover,
+            .hidedrei:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*vier*/
+
+        #vier {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #vier:not(:target) .vierinhalt,
+            #vier:not(:target) .hidevier,
+            #vier:target .showvier {
+                display: none;
+            }
+
+            #vier:target .vierinhalt {
+                display: block;
+            }
+
+        .vierinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showvier,
+        .hidevier {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showvier:hover,
+            .hidevier:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*fuenf*/
+
+        #fuenf {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #fuenf:not(:target) .fuenfinhalt,
+            #fuenf:not(:target) .hidefuenf,
+            #fuenf:target .showfuenf {
+                display: none;
+            }
+
+            #fuenf:target .fuenfinhalt {
+                display: block;
+            }
+
+        .fuenfinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showfuenf,
+        .hidefuenf {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showfuenf:hover,
+            .hidefuenf:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*sechs*/
+
+        #sechs {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #sechs:not(:target) .sechsinhalt,
+            #sechs:not(:target) .hidesechs,
+            #sechs:target .showsechs {
+                display: none;
+            }
+
+            #sechs:target .sechsinhalt {
+                display: block;
+            }
+
+        .sechsinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showsechs,
+        .hidesechs {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showsechs:hover,
+            .hidesechs:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*sieben*/
+
+        #sieben {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #sieben:not(:target) .siebeninhalt,
+            #sieben:not(:target) .hidesieben,
+            #sieben:target .showsieben {
+                display: none;
+            }
+
+            #sieben:target .siebeninhalt {
+                display: block;
+            }
+
+        .siebeninhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showsieben,
+        .hidesieben {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showsieben:hover,
+            .hidesieben:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*acht*/
+
+        #acht {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #acht:not(:target) .achtinhalt,
+            #acht:not(:target) .hideacht,
+            #acht:target .showacht {
+                display: none;
+            }
+
+            #acht:target .achtinhalt {
+                display: block;
+            }
+
+        .achtinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showacht,
+        .hideacht {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showacht:hover,
+            .hideacht:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*neun*/
+
+        #neun {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #neun:not(:target) .neuninhalt,
+            #neun:not(:target) .hideneun,
+            #neun:target .showneun {
+                display: none;
+            }
+
+            #neun:target .neuninhalt {
+                display: block;
+            }
+
+        .neuninhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showneun,
+        .hideneun {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showneun:hover,
+            .hideneun:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*zehn*/
+
+        #zehn {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #zehn:not(:target) .zehninhalt,
+            #zehn:not(:target) .hidezehn,
+            #zehn:target .showzehn {
+                display: none;
+            }
+
+            #zehn:target .zehninhalt {
+                display: block;
+            }
+
+        .zehninhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showzehn,
+        .hidezehn {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showzehn:hover,
+            .hidezehn:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        /*elf*/
+
+        #elf {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+            #elf:not(:target) .elfinhalt,
+            #elf:not(:target) .hideelf,
+            #elf:target .showelf {
+                display: none;
+            }
+
+            #elf:target .elfinhalt {
+                display: block;
+            }
+
+        .elfinhalt {
+            padding: 20px 20px 1px;
+            font-size: 15px;
+        }
+
+        .showelf,
+        .hideelf {
+            padding: 10px;
+            background: transparent;
+            color: black;
+            box-shadow: none;
+        }
+
+            .showelf:hover,
+            .hideelf:hover {
+                background-color: transparent;
+                color: black;
+                transition: 0.2s all ease-in-out;
+            }
+
+        #zwoelf {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+        #dreizehn {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+        #vierzehn {
+            margin-left: 50px;
+            position: relative;
+            margin-bottom: 50px;
+            color: black;
+            font-size: 17px;
+        }
+
+        .ort {
+            margin-left: 460px;
+        }
+
+        #foot {
+            background-color: #617369;
+            padding-left: 500px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+
+        #maps {
+            margin-top: -300px;
+            margin-left: -450px;
+        }
+
+    </style>
+
+</head>
+
+<body background="background.png">
+
+    <header>
+
+        <img src="telefon.png" id="telefon" />
+        <a href="tel:+4368110803471"><img src="telefonbunt.png" id="telefonbunt" /></a>
+        <img src="mail.png" id="mail" />
+        <a href="mailto:theresa.temper@gmail.com"><img src="mailbunt.png" id="mailbunt" /></a>
+
+        <div align="center">
+            <img id="logoheader" src="logo.svg" />
+        </div>
+
+        <div align="center">
+            <img id="beschreibungheader" src="beschreibung.png" />
+        </div>
+
+    </header>
+
+    <main>
+
+        <table border="0" cellspacing="20px;" width="100%" height="20%">
+            <tr>
+                <td rowspan="2" height="100%" position="top">
+                    <img id="foto" src="foto.svg" alt="Foto" />
+                </td>
+                <td>
+                    <img id="name" src="name.svg" />
+                </td>
+                <td width="180px" rowspan="2">  </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                </td>
+            </tr>
+        </table>
+
+        <div class="box" id="heilmassage">
+            <b><p class="überschrift">Medizinische Heilmassagen</p></b><hr />
+            <p class="text">Heilmassagen werden bei Beschwerden des Bewegungsapparates, Verletzungen sowie zur postoperativen Behandlung eingesetzt. Gemeinsam wird ergr&uuml;ndet, welche Beschwerden oder Schwachpunkte am K&ouml;rper zu finden sind, um die Behandlung individuell auf Sie abzustimmen. Heilmassagen können generell auch &uuml;ber die Krankenkasse abgerechnet werden. Die Voraussetzung daf&uuml;r ist eine &Uuml;berweisung des Arztes</p><br />
+
+            <div id="eins">
+                <a class="showeins" href="#eins">+ BINDEGEWEBS- &frasl; FASZIENMASSAGE </a><a class="hideeins" href="#">- BINDEGEWEBS- &frasl; FASZIENMASSAGE</a>
+                <div class="einsinhalt">
+                    <b>Dauer:</b> 25min &Iota; 50min
+                    <b>Preis:</b> 36 &euro; &Iota; 62 &euro;
+                </div>
+            </div>
+
+            <div id="zwei">
+                <a class="showzwei" href="#zwei">+ MANUELLE LYMPHDRAINAGE </a><a class="hidezwei" href="#heilmassage">- MANUELLE LYMPHDRAINAGE</a>
+                <div class="zweiinhalt">
+                    <b>Dauer:</b> 25min &Iota; 50min
+                    <b>Preis:</b> 36 &euro; &Iota; 62 &euro;
+                </div>
+            </div>
+
+            <div id="drei">
+                <a class="showdrei" href="#drei">+ TRIGGERPUNKTMASSAGE </a><a class="hidedrei" href="#heilmassage">- TRIGGERPUNKTMASSAGE</a>
+                <div class="dreiinhalt">
+                    <b>Dauer:</b> 25min &Iota; 50min
+                    <b>Preis:</b> 36 &euro; &Iota; 62 &euro;
+                </div>
+            </div>
+
+            <div id="vier">
+                <a class="showvier" href="#vier">+ BINDEGEWEBS- &frasl; FASZIENMASSAGE </a><a class="hidevier" href="#heilmassage">- BINDEGEWEBS- &frasl; FASZIENMASSAGE</a>
+                <div class="vierinhalt">
+                    <b>Dauer:</b> 50min
+                    <b>Preis:</b> 62 &euro;
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box" id="praeventiv" align="right">
+            <b><p class="überschrift">Pr&auml;ventive Massagen</p></b><hr />
+            <p class="text">Gesundheit ist ein hohes Gut. Diese Techniken tragen einen großen Teil dazu bei, dass die Gesundheit des Bewegungsapparates und der Psyche erhalten bleibt und gef&ouml;rdert wird.</p><br />
+
+            <div id="fuenf">
+                <a class="showfuenf" href="#fuenf">+ KLASSISCHE MASSAGE </a><a class="hidefuenf" href="#praeventiv">- KLASSISCHE MASSAGE </a>
+                <div class="fuenfinhalt">
+                    <b>Dauer:</b> 25min &Iota; 50min
+                    <b>Preis:</b> 36 &euro; &Iota; 62 &euro;
+                </div>
+            </div>
+
+            <div id="sechs">
+                <a class="showsechs" href="#sechs">+ FUSSREFLEXZONENMASSAGE </a><a class="hidesechs" href="#praeventiv">- FUSSREFLEXZONENMASSAGE</a>
+                <div class="sechsinhalt">
+                    <b>Dauer:</b> 30min
+                    <b>Preis:</b> 45 &euro;
+                </div>
+            </div>
+
+            <div id="sieben">
+                <a class="showsieben" href="#sieben">+ DORN-BREUSS  </a><a class="hidesieben" href="#praeventiv">- DORN-BREUSS </a>
+                <div class="siebeninhalt">
+                    <b>Dauer:</b> 25min &Iota; 50min
+                    <b>Preis:</b> 36 &euro; &Iota; 62 &euro;
+                </div>
+            </div>
+
+            <div id="acht">
+                <a class="showacht" href="#acht">+ AKUPUNKTMASSAGE </a><a class="hideacht" href="#praeventiv">- AKUPUNKTMASSAGE</a>
+                <div class="achtinhalt">
+                    <b>Dauer:</b> 25min &Iota; 50min
+                    <b>Preis:</b> 36 &euro; &Iota; 62 &euro;
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box" id="entspannung">
+            <b><p class="überschrift">Entspannungsmassagen</p></b><hr />
+            <p class="text">Gerade in der heutigen Zeit, in der Stress und &Uuml;berforderung an der Tagesordnung stehen, kommen wir oft schnell an unsere psychischen und mentalen Grenzen.Die folgenden Massagetechniken sorgen für einen tiefenentspannten Zustand und wirken positiv auf das Wohlbefinden. Lassen Sie los vom Alltag und tauchen Sie in ein Meer der Entspannung ein</p><br />
+
+            <div id="neun">
+                <a class="showneun" href="#neun">+ ANTI-STRESS-MASSAGE </a><a class="hideneun" href="#entspannung">- ANTI-STRESS-MASSAGE</a>
+                <div class="neuninhalt">
+                    <b>Dauer:</b> 50min
+                    <b>Preis:</b> 62 &euro;
+                </div>
+            </div>
+
+            <div id="zehn">
+                <a class="showzehn" href="#zehn">+ AROMAÖL-MASSAGE </a><a class="hidezehn" href="#entspannung">- AROMAÖL-MASSAGE</a>
+                <div class="zehninhalt">
+                    <b>Dauer:</b> 50min
+                    <b>Preis:</b> 62 &euro;
+                </div>
+            </div>
+
+            <div id="elf">
+                <a class="showelf" href="#elf">+ GESICHTSMASSAGE </a><a class="hideelf" href="#entspannung">- GESICHTSMASSAGE</a>
+                <div class="elfinhalt">
+                    <b>Dauer:</b> 25min
+                    <b>Preis:</b> 36 &euro;
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box" id="zusatz" align="right">
+            <b><p class="überschrift">Zusatzbehandlungen</p></b><hr />
+            <p class="text">Diese therapeutischen Ma&szlig;nahmen werden in Kombination mit anderen Massagetechniken eingesetzt, z.B. mit der Heilmassage oder der Klassischen Massage.</p><br />
+
+            <div id="zwoelf">KINESIO TAPE</div>
+            <div id="dreizehn">SCHR&Ouml;PFEN</div>
+            <div id="vierzehn">NARBEN ENTST&Ouml;REN</div>
+
+        </div>
+
+    </main>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer>
+
+        <span class="ort">
+            <b>ADRESSE:</b>
+        </span><br />
+        <span class="ort">
+            Zerzerstraße 8
+        </span><br />
+        <span class="ort">
+            4040 Linz
+        </span>
+
+        <div id="foot">
+
+            <span>
+                <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2652.6303373165!2d14.304869975741113!3d48.329188337803124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739847e55aa535%3A0xe36829f37ed523b3!2sZerzerstra%C3%9Fe%208%2C%204040%20Linz!5e0!3m2!1sde!2sat!4v1681732350574!5m2!1sde!2sat" width="400px" height="350px" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </span>
+
+            <table border="0" cellspacing="20px;" height="5%" width="100%" margin-top="-150px">
+                <tr>
+                    <td width="30%">
+                        <b><a href="xxx">IMPRESSUM</a></b>
+                    </td>
+                    <td width="30%">
+                        <b><a href="xxx">DATENSCHUTZ</a></b>
+                    </td>
+                    <td width="30%">
+                        <b><a href="xxx">AGB</a></b>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
